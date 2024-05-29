@@ -9,14 +9,26 @@
     <h1>Códigos postales de México</h1>
     <form action="">
       <label>CP</label>
-      <input type="text" id="cp" maxlength="5" pattern="\d{5}" required />
+      <input
+        type="text"
+        id="cp"
+        maxlength="5"
+        pattern="\d{5}"
+        required
+      /><br /><br />
       <label>Estado</label>
-      <input type="text" id="state" readonly required /><br />
+      <input type="text" id="state" readonly required /><br /><br />
       <label>Alcaldía/Municipio</label>
-      <input type="text" id="zone" readonly required /><br />
+      <input type="text" id="zone" readonly required /><br /><br />
       <label>Colonia</label>
       <select id="colonys"></select
-      ><br />
+      ><br /><br />
+      <label>Calle</label>
+      <input type="text" required /><br /><br />
+      <label>Numero exterior</label>
+      <input type="text" maxlength="5" pattern="\d{5}" /><br /><br />
+      <label>Numero interior</label>
+      <input type="text" maxlength="5" pattern="\d{5}" /><br /><br />
       <input type="submit" value="Registrar" id="submit-form" />
     </form>
   </body>
