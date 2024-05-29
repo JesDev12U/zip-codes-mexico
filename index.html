@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Códigos Postales</title>
+  </head>
+  <body>
+    <h1>Códigos postales de México</h1>
+    <form action="">
+      <label>CP</label>
+      <input type="text" id="cp" maxlength="5" pattern="\d{5}" required />
+      <label>Estado</label>
+      <input type="text" id="state" readonly required /><br />
+      <label>Alcaldía/Municipio</label>
+      <input type="text" id="zone" readonly required /><br />
+      <label>Colonia</label>
+      <select id="colonys"></select
+      ><br />
+      <input type="submit" value="Registrar" id="submit-form" />
+    </form>
+  </body>
+  <script src="./script.js"></script>
+</html>
