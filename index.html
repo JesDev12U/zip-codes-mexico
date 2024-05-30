@@ -7,29 +7,50 @@
   </head>
   <body>
     <h1>Códigos postales de México</h1>
-    <form action="">
+    <form
+      action="register.php"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+    >
       <label>CP</label>
       <input
         type="text"
         id="cp"
         maxlength="5"
         pattern="\d{5}"
+        name="cp"
         required
       /><br /><br />
       <label>Estado</label>
-      <input type="text" id="state" readonly required /><br /><br />
+      <input
+        type="text"
+        id="state"
+        name="state"
+        readonly
+        required
+      /><br /><br />
       <label>Alcaldía/Municipio</label>
-      <input type="text" id="zone" readonly required /><br /><br />
+      <input type="text" id="zone" name="zone" readonly required /><br /><br />
       <label>Colonia</label>
-      <select id="colonys"></select
+      <select id="colonys" name="colony"></select
       ><br /><br />
       <label>Calle</label>
-      <input type="text" id="street" required /><br /><br />
+      <input type="text" id="street" name="street" required /><br /><br />
       <label>Numero exterior</label>
-      <input type="text" id="ext-num" maxlength="10" /><br /><br />
+      <input
+        type="text"
+        id="ext-num"
+        name="ext_num"
+        maxlength="10"
+      /><br /><br />
       <label>Numero interior</label>
-      <input type="text" id="in-num" maxlength="10" /><br /><br />
-      <input type="submit" value="Registrar" id="submit-form" />
+      <input type="text" id="in-num" name="in_num" maxlength="10" /><br /><br />
+      <input
+        type="submit"
+        value="Registrar"
+        id="submit-form"
+        name="submit_form"
+      />
     </form>
   </body>
   <script src="./script.js"></script>
